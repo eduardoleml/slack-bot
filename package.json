@@ -1,0 +1,25 @@
+{
+  "name": "sunbro",
+  "version": "1.0.0",
+  "description": "Slackbot",
+  "main": "src/app/app.js",
+  "scripts": {
+    "start": "node src/app/app.js",
+    "start-dev": "nodemon src/app/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bot",
+    "slack"
+  ],
+  "author": "Eduardo Lemus",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^3.19.0",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
