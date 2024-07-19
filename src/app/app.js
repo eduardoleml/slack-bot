@@ -163,6 +163,7 @@ app.message('[bot] --asignar', async ({ message, say }) => {
             if(param.includes(':')){
                 let key = param.split(":")[0];
                 let value = param.split(":")[1];
+                if(key === 'semana' || key === 'horas') value = parseInt(value);
                 return asignationParams[key] = value;
             } else {
                 return asignationParams[param] = 0;
